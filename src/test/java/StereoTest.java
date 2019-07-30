@@ -35,7 +35,7 @@ public class StereoTest {
     public void canTuneRadio() {
         assertEquals("Radio 1", stereo.tuneRadio("Radio 1"));
     }
-    
+
     @Test
     public void canPlayCD() {
         assertEquals("I'm Singing!!!", stereo.playCD());
