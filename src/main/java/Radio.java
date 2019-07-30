@@ -15,4 +15,9 @@ public class Radio {
     public String getModel() {
         return model;
     }
+
+
+    public String tune(String station) {
+        return station;
+    }
 }
