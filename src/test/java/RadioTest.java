@@ -16,4 +16,9 @@ public class RadioTest {
     public void hasMake() {
         assertEquals("Sony", radio.getMake());
     }
+
+    @Test
+    public void hasModel() {
+        assertEquals("A6000", radio.getModel());
+    }
 }
