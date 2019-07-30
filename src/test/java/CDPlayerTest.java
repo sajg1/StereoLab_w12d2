@@ -8,7 +8,7 @@ public class CDPlayerTest {
 
     @Before
     public void setup() {
-        cdplayer = new CDPlayer("Sony", "A300");
+        cdplayer = new CDPlayer("Sony", "A300", 20);
 
     }
 
@@ -22,5 +22,16 @@ public class CDPlayerTest {
     public void hasModel() {
         assertEquals("A300", cdplayer.getModel());
     }
+
+    @Test
+    public void hasNrCD(){
+        assertEquals(20, cdplayer.getNumberOfCD());
+    }
+
+    @Test
+    public void canPlayCD() {
+        assertEquals("I'm Singing!!!", cdplayer.play());
+    }
+
 }
 
