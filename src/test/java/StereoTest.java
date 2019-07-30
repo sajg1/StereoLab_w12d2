@@ -13,7 +13,12 @@ public class StereoTest {
     public void setUp() {
         cdPlayer = new CDPlayer("Sony", "A300", 5);
         radio = new Radio("Sony", "A3000");
-        stereo = new Stereo(radio, cdPlayer);
+        stereo = new Stereo("Bob", radio, cdPlayer);
+    }
+    
+    @Test
+    public void hasName() {
+        assertEquals("Bob", stereo.getName());
     }
 
     @Test
