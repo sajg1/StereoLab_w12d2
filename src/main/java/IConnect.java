@@ -1,4 +1,4 @@
 public interface IConnect {
-    public void connect(Stereo stereo);
+    public String connect(Stereo stereo);
 
 }

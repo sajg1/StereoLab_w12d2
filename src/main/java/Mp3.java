@@ -1,4 +1,4 @@
-public class Mp3 extends Component {
+public class Mp3 extends Component implements IConnect {
 
     private int storage;
 
@@ -9,5 +9,9 @@ public class Mp3 extends Component {
 
     public int getStorage() {
         return storage;
+    }
+
+    public String connect(Stereo stereo) {
+        return "Connected to " + stereo.getName();
     }
 }
