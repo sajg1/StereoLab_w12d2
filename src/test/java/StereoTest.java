@@ -15,7 +15,7 @@ public class StereoTest {
         radio = new Radio("Sony", "A3000");
         stereo = new Stereo("Bob", radio, cdPlayer);
     }
-    
+
     @Test
     public void hasName() {
         assertEquals("Bob", stereo.getName());
@@ -29,5 +29,15 @@ public class StereoTest {
     @Test
     public void hasCDPlayer() {
         assertEquals(cdPlayer, stereo.getCdPlayer());
+    }
+
+    @Test
+    public void canTuneRadio() {
+        assertEquals("Radio 1", stereo.tuneRadio("Radio 1"));
+    }
+    
+    @Test
+    public void canPlayCD() {
+        assertEquals("I'm Singing!!!", stereo.playCD());
     }
 }

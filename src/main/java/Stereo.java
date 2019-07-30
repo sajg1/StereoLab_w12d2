@@ -21,4 +21,12 @@ public class Stereo {
     public CDPlayer getCdPlayer() {
         return cdPlayer;
     }
+
+    public String tuneRadio(String station) {
+        return radio.tune(station);
+    }
+
+    public String playCD() {
+        return cdPlayer.play();
+    }
 }
